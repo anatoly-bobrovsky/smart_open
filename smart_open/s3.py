@@ -838,7 +838,7 @@ multipart upload may fail")
         """If False, seek(), tell() and truncate() will raise IOError.
 
         We offer only tell support, and no seek or truncate support."""
-        return True
+        return False
 
     def seek(self, offset, whence=constants.WHENCE_START):
         """Unsupported."""
